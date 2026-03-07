@@ -1,0 +1,15 @@
+[user]
+	name = nia
+	email = mangrove0720@outlook.com
+[core]
+	editor = code --wait
+[init]
+	defaultBranch = dev
+[push]
+	default = current
+[alias]
+	co = checkout
+	br = branch
+	cm = commit -m
+	ca = commit --amend
+	lg = log --oneline --graph --all --decorate

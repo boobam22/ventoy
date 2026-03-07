@@ -1,0 +1,8 @@
+{
+    "auto_install": [
+        {
+            "image": "/ISO/debian-12.10.0-amd64-netinst.iso",
+            "template": "/ventoy/config/debian_preseed.cfg"
+        }
+    ]
+}

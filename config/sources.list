@@ -1,0 +1,12 @@
+deb http://deb.debian.org/debian           bookworm          main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian           bookworm-updates  main contrib non-free non-free-firmware
+deb http://deb.debian.org/debian-security  bookworm-security main contrib non-free non-free-firmware
+
+# wget -qO- https://dl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o google.gpg
+deb [signed-by=/usr/share/keyrings/google.gpg]                https://dl.google.com/linux/chrome/deb stable main
+
+# wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor -o microsoft.gpg
+deb [signed-by=/usr/share/keyrings/microsoft.gpg]             https://packages.microsoft.com/repos/code stable main
+
+# wget -qO- https://download.docker.com/linux/debian/gpg      | gpg --dearmor -o docker.gpg
+deb [signed-by=/usr/share/keyrings/docker.gpg]                https://download.docker.com/linux/debian bookworm stable
